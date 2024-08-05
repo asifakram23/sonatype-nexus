@@ -1,0 +1,12 @@
+1.	Launch EC2 Instance
+2.	It will not work on t2.micro( which offers 1 CPU and 1GB Memory)
+3.	Minimum of 2 CPU and 4GB memory is required
+4.	Launch t3.medium instance
+5.	Install java 17 on this machine
+1.	sudo yum install java-1.8.0-openjdk-devel -y
+6.	cd /opt
+7.	sudo wget https://download.sonatype.com/nexus/3/nexus-3.49.0-02-unix.tar.gz
+8.	sudo tar xf nexus-3.49.0-02-unix.tar.g
+9.	sudo chown -R ec2-user:ec2-user nexus-3.49.0-02 sonatype-work
+11.	Start nexus server
+12.	Default port of nexus is 8081
